@@ -7,9 +7,12 @@ Hospital readmission is an important contributor to total medical expenditures a
 
 **Dataset**
 The data subset used for analysis covers 10 years of diabetes patient encounter data (1999 – 2008) among 130 US hospitals with over 100,000 diabetes patients. Moreover, all the encounters used for analysis satisfy five key criteria:
-• The length of stay was comprised from 1 to 14 days.
-• The inpatient underwent laboratory testing.
-• The inpatient received medication during its stay.
+* The length of stay was comprised from 1 to 14 days.
+* The inpatient underwent laboratory testing.
+* The inpatient received medication during its stay.
+* It is a hospital admission.
+* The inpatient was classified as diabetic (at least one of three initial diagnoses included
+diabetes).
 
 **Final Model**
 As we can see from the above results, LGBM and XGBoost are giving
@@ -20,12 +23,12 @@ to train on this large dataset thus saving costs and time while giving the best 
 
 **Findings**
 If the patient has the following characteristics, he has a high probability of being readmitted:
-• High preceding year visits.
-• If the patient is discharged to another medical facility or discharged to home with health
+* High preceding year visits.
+* If the patient is discharged to another medical facility or discharged to home with health
   services.
-• High number of diagnoses.
-• If the patient is given diabetes medicines.
-• If the primary diagnosed disease was of circulatory system.
-• If Metformin and/or insulin is not being given or the dosage is low.
-• If secondary diagnosis was coming to be Diabetes.
-• If A1C test was not performed.
+* High number of diagnoses.
+* If the patient is given diabetes medicines.
+* If the primary diagnosed disease was of circulatory system.
+* If Metformin and/or insulin is not being given or the dosage is low.
+* If secondary diagnosis was coming to be Diabetes.
+* If A1C test was not performed.
